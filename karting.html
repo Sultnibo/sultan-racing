@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karting — Sultan Racing</title>
+<meta name="description" content="Wo ich fahre, wie oft ich es schaffe — und was mir noch fehlt.">
+<meta name="theme-color" content="#B41229">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23B41229'/%3E%3Cpath d='M11 22V11l7 5.2L24 8l6 8.2 7-5.2v11z' fill='%23C9A227'/%3E%3Cpath d='M11 27h4l2.2-3.6a3 3 0 0 1 2.6-1.4h8.4a3 3 0 0 1 2.6 1.4L33 27h4a2 2 0 0 1 0 4H11a2 2 0 0 1 0-4z' fill='%23FFF8EE'/%3E%3Ccircle cx='16' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3Ccircle cx='32' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-seite="karting">
+<div id="kopf-halter"></div>
+
+<main id="inhalt">
+
+<section class="seitenkopf">
+  <div class="huelle seitenkopf__innen">
+    <p class="kicker" data-i18n="kart.kicker">Auf der Strecke</p>
+    <h1 data-i18n="kart.titel">Karting</h1>
+    <p data-i18n="kart.lead"></p>
+    <p class="badge" data-i18n="kart.badge">Freizeit-Karting · noch ohne Rennlizenz</p>
+  </div>
+</section>
+
+<section class="abschnitt">
+  <div class="huelle">
+    <div class="kart__gitter">
+      <div class="fliess">
+        <p data-i18n="kart.p1"></p>
+        <p data-i18n="kart.p2"></p>
+      </div>
+
+      <div class="tafel">
+        <h3 data-i18n="kart.strecken.titel">Strecken, die ich kenne</h3>
+        <ul class="kronenliste" id="streckenliste"></ul>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         Hier stand mal eine Fotogalerie mit Platzhaltern — auf Wunsch entfernt.
+
+         Willst du später doch eigene Fotos zeigen: Bilder nach assets/img/
+         legen (vorher auf ca. 1600 px Breite verkleinern, nur eigene Fotos)
+         und diesen Block hier einfügen:
+
+         <h2 class="galerie__titel">Aus dem Kart</h2>
+         <div class="galerie">
+           <figure class="foto">
+             <img src="assets/img/kart-1.jpg" alt="Ich im Kart in Kurve 1" loading="lazy">
+           </figure>
+           <figure class="foto">
+             <img src="assets/img/kart-2.jpg" alt="Beschreibung des Bildes" loading="lazy">
+           </figure>
+         </div>
+
+         Der alt-Text ist kein Beiwerk: er beschreibt das Bild für Leute, die
+         nicht sehen können, und für Google.
+         ====================================================================== -->
+  </div>
+</section>
+
+</main>
+
+<div id="fuss-halter"></div>
+<script src="data/inhalte.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

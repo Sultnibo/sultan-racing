@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videos — Sultan Racing</title>
+<meta name="description" content="Zwei TikTok-Kanäle, die ich selbst aufgebaut habe, und ein paar Videos daraus.">
+<meta name="theme-color" content="#B41229">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23B41229'/%3E%3Cpath d='M11 22V11l7 5.2L24 8l6 8.2 7-5.2v11z' fill='%23C9A227'/%3E%3Cpath d='M11 27h4l2.2-3.6a3 3 0 0 1 2.6-1.4h8.4a3 3 0 0 1 2.6 1.4L33 27h4a2 2 0 0 1 0 4H11a2 2 0 0 1 0-4z' fill='%23FFF8EE'/%3E%3Ccircle cx='16' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3Ccircle cx='32' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-seite="videos">
+<div id="kopf-halter"></div>
+
+<main id="inhalt">
+
+<section class="seitenkopf">
+  <div class="huelle seitenkopf__innen">
+    <p class="kicker" data-i18n="content.kicker">Meine Kanäle</p>
+    <h1 data-i18n="content.titel">Videos</h1>
+    <p data-i18n="content.lead"></p>
+  </div>
+</section>
+
+<section class="abschnitt">
+  <div class="huelle">
+    <div class="kart__gitter">
+      <div class="fliess">
+        <p data-i18n="content.p1"></p>
+        <p data-i18n="content.p2"></p>
+        <p data-i18n="content.p3"></p>
+        <p data-i18n="content.p4"></p>
+      </div>
+
+      <article class="kanal">
+        <p class="kanal__rolle" data-i18n="kanal2.rolle">Karting-Kanal</p>
+        <p class="kanal__name" id="kanal2-name"></p>
+        <dl class="kanal__zahlen" id="kanal2-zahlen" hidden>
+          <div><dt data-i18n="kanal.follower">Follower</dt><dd id="kanal2-follower"></dd></div>
+          <div><dt data-i18n="kanal.likes">Likes</dt><dd id="kanal2-likes"></dd></div>
+        </dl>
+        <a class="knopf knopf--klein" id="kanal2-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="kanal.oeffnen">Kanal ansehen</a>
+        <p class="zahlen-stand" id="zahlen-stand" hidden></p>
+      </article>
+    </div>
+
+    <h2 class="galerie__titel" data-i18n="videos.titel">Ein paar Videos</h2>
+
+    <!-- ======================================================================
+         VIDEOS EINTRAGEN
+
+         Die Kacheln kommen aus data/inhalte.js, ganz oben bei "videos".
+         Pro Video eine Zeile:
+
+           { url: "https://www.tiktok.com/@sultnibo/video/123…",
+             bild: "assets/img/video-1.jpg",
+             titel: { de: "Erste Runde auf der neuen Bahn", en: "First lap on the new track" } },
+
+         url   = TikTok-App -> Teilen -> Link kopieren
+         bild  = optional. Screenshot vom Video in assets/img/ legen.
+                 Leer lassen ("") zeigt eine gestaltete Kachel.
+         Klick auf die Kachel öffnet das Video bei TikTok.
+         ====================================================================== -->
+    <ul class="videos" id="videoliste"></ul>
+  </div>
+</section>
+
+</main>
+
+<div id="fuss-halter"></div>
+<script src="data/inhalte.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

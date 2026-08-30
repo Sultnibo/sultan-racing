@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ibrahim Celikci — Sultan Racing</title>
+<meta name="description" content="16 Jahre, Raum Hannover. Karting, Sim-Racing, DTM und Formel 1 — und zwei eigene TikTok-Kanäle.">
+<meta name="author" content="Sultan Racing">
+<meta name="theme-color" content="#B41229">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ibrahim Celikci — Sultan Racing">
+<meta property="og:description" content="16 Jahre, Raum Hannover. Karting, Sim-Racing, DTM und Formel 1 — und zwei eigene TikTok-Kanäle.">
+<!-- AUSFÜLLEN: Bild 1200x630 px als assets/img/og-bild.jpg ablegen -->
+<meta property="og:image" content="assets/img/og-bild.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23B41229'/%3E%3Cpath d='M11 22V11l7 5.2L24 8l6 8.2 7-5.2v11z' fill='%23C9A227'/%3E%3Cpath d='M11 27h4l2.2-3.6a3 3 0 0 1 2.6-1.4h8.4a3 3 0 0 1 2.6 1.4L33 27h4a2 2 0 0 1 0 4H11a2 2 0 0 1 0-4z' fill='%23FFF8EE'/%3E%3Ccircle cx='16' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3Ccircle cx='32' cy='35' r='4.5' fill='%23FFF8EE'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-seite="start">
+<div id="kopf-halter"></div>
+
+<main id="inhalt">
+
+<!-- ========================================================== HERO -->
+<section class="hero">
+  <div class="huelle hero__gitter">
+
+    <div class="hero__text">
+      <p class="kicker" data-i18n="hero.kicker">Sultan Racing</p>
+      <h1 class="hero__name" data-i18n="hero.name">Ibrahim Celikci</h1>
+      <p class="hero__fakten" data-i18n="hero.fakten">16 Jahre · Karting &amp; Sim-Racing</p>
+      <p class="hero__lead" data-i18n="hero.lead"></p>
+      <div class="hero__knoepfe">
+        <a class="knopf knopf--primaer" href="ueber-mich.html" data-i18n="hero.cta1">Mehr über mich</a>
+        <a class="knopf knopf--geist" href="#" id="cv-knopf" hidden data-i18n="hero.cta2">Lebenslauf</a>
+      </div>
+    </div>
+
+    <div class="hero__bild">
+      <!-- ============================================================
+           Bild statt Zeichnung.
+
+           Zwei Formate: WebP laden alle heutigen Browser (87 KB), die PNG
+           ist nur der Rueckfall fuer sehr alte. Der Hintergrund ist
+           freigestellt, damit kein weisser Kasten auf dem Creme sichtbar wird.
+
+           Anderes Bild einsetzen: beide Dateien in assets/img/ ersetzen
+           und den alt-Text in data/inhalte.js bei "hero.bild.alt" anpassen.
+           ============================================================ -->
+      <div class="szene">
+
+        <!-- Outdoor-Kartstrecke als Cartoon-Kulisse. Reines SVG, keine Bilddatei.
+             Der Sultan liegt freigestellt darüber, seine Räder stehen auf dem
+             Asphaltband (y 588–840). Wenn du das Bild austauschst, achte darauf,
+             dass die Räder ungefähr auf dieser Höhe sitzen. -->
+        <svg class="szene__kulisse" viewBox="0 0 900 900" aria-hidden="true" focusable="false">
+          <!-- Himmel -->
+          <rect width="900" height="470" fill="#C7E2F0"/>
+          <circle cx="742" cy="118" r="64" fill="#F6DE97"/>
+          <circle cx="742" cy="118" r="88" fill="#F6DE97" opacity=".35"/>
+
+          <!-- Wolken -->
+          <g fill="#FFFFFF" opacity=".92">
+            <g>
+              <circle cx="130" cy="118" r="30"/><circle cx="168" cy="104" r="38"/>
+              <circle cx="212" cy="120" r="27"/><rect x="128" y="118" width="86" height="26" rx="13"/>
+            </g>
+            <g opacity=".8">
+              <circle cx="430" cy="72" r="22"/><circle cx="462" cy="62" r="28"/>
+              <circle cx="496" cy="74" r="20"/><rect x="428" y="72" width="70" height="20" rx="10"/>
+            </g>
+          </g>
+
+          <!-- Hügel hinten -->
+          <path d="M0 432 Q150 356 320 402 Q470 442 630 384 Q780 332 900 392 L900 470 L0 470 Z" fill="#A9C99A"/>
+
+          <!-- Baumreihe -->
+          <g>
+            <g fill="#6E9E5C">
+              <circle cx="80"  cy="404" r="34"/><circle cx="118" cy="416" r="26"/>
+              <circle cx="300" cy="392" r="30"/><circle cx="266" cy="408" r="22"/>
+              <circle cx="560" cy="398" r="32"/><circle cx="596" cy="412" r="24"/>
+              <circle cx="820" cy="388" r="36"/><circle cx="782" cy="406" r="25"/>
+            </g>
+            <g fill="#7A5A3C">
+              <rect x="92"  y="424" width="12" height="34" rx="5"/>
+              <rect x="290" y="414" width="11" height="42" rx="5"/>
+              <rect x="552" y="420" width="12" height="38" rx="5"/>
+              <rect x="812" y="410" width="13" height="46" rx="6"/>
+            </g>
+          </g>
+
+          <!-- Wiese -->
+          <rect y="450" width="900" height="450" fill="#93BE74"/>
+          <path d="M0 450 L900 450 L900 500 Q450 530 0 505 Z" fill="#89B66C"/>
+
+          <!-- Reifenstapel neben der Strecke -->
+          <g>
+            <g transform="translate(96 512)">
+              <rect x="0" y="26" width="54" height="18" rx="9" fill="#4A4644"/>
+              <rect x="0" y="10" width="54" height="18" rx="9" fill="#5A5654"/>
+              <rect x="0" y="-6" width="54" height="18" rx="9" fill="#4A4644"/>
+              <rect x="6" y="-2" width="42" height="6" rx="3" fill="#FFF8EE" opacity=".8"/>
+            </g>
+            <g transform="translate(690 496)">
+              <rect x="0" y="26" width="54" height="18" rx="9" fill="#4A4644"/>
+              <rect x="0" y="10" width="54" height="18" rx="9" fill="#5A5654"/>
+              <rect x="0" y="-6" width="54" height="18" rx="9" fill="#4A4644"/>
+              <rect x="6" y="-2" width="42" height="6" rx="3" fill="#FFF8EE" opacity=".8"/>
+            </g>
+          </g>
+
+          <!-- Streckenposten-Fähnchen -->
+          <g>
+            <rect x="404" y="470" width="6" height="62" rx="3" fill="#8A8480"/>
+            <path d="M410 474 L466 488 L410 502 Z" fill="var(--rot)"/>
+          </g>
+
+          <!-- Asphalt -->
+          <path d="M0 618 L900 588 L900 800 L0 840 Z" fill="#7C7674"/>
+          <path d="M0 690 L900 655 L900 676 L0 712 Z" fill="#8B8583" opacity=".55"/>
+
+          <!-- Randsteine: weiße Grundlinie, rote Striche darüber -->
+          <path d="M0 604 L900 574" stroke="#FFF8EE" stroke-width="26"/>
+          <path d="M0 604 L900 574" stroke="var(--rot)" stroke-width="26" stroke-dasharray="38 38"/>
+          <path d="M0 848 L900 808" stroke="#FFF8EE" stroke-width="26"/>
+          <path d="M0 848 L900 808" stroke="var(--rot)" stroke-width="26" stroke-dasharray="44 44" stroke-dashoffset="22"/>
+
+          <!-- Wiese im Vordergrund -->
+          <path d="M0 861 L900 821 L900 900 L0 900 Z" fill="#84B267"/>
+        </svg>
+
+        <picture>
+          <source srcset="assets/img/sultan-kart.webp" type="image/webp">
+          <img class="kart" src="assets/img/sultan-kart.png"
+               width="900" height="900" fetchpriority="high"
+               data-i18n-alt="hero.bild.alt"
+               alt="Illustration: ein Sultan mit Turban faehrt ein rotes Gokart auf einer Kartstrecke">
+        </picture>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="huelle">
+    <ul class="statleiste">
+      <li><span class="statleiste__wert" data-i18n="stat1.wert">16</span><span class="statleiste__label" data-i18n="stat1.label">Jahre alt</span></li>
+      <li><span class="statleiste__wert" data-i18n="stat2.wert">2</span><span class="statleiste__label" data-i18n="stat2.label">Disziplinen</span></li>
+      <li><span class="statleiste__wert" data-i18n="stat3.wert">3</span><span class="statleiste__label" data-i18n="stat3.label">Sprachen</span></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ================================================ SEITEN-KACHELN -->
+<section class="abschnitt abschnitt--getoent">
+  <div class="huelle">
+    <header class="abschnitt__kopf">
+      <p class="kicker" data-i18n="start.mehr">Wo du weiterlesen kannst</p>
+    </header>
+
+    <div class="kacheln">
+      <a class="kachel" href="ueber-mich.html">
+        <span class="kachel__nr">01</span>
+        <h2 data-i18n="ueber.titel">Über mich</h2>
+        <p data-i18n="teaser.ueber"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+      <a class="kachel" href="karting.html">
+        <span class="kachel__nr">02</span>
+        <h2 data-i18n="kart.titel">Karting</h2>
+        <p data-i18n="teaser.kart"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+      <a class="kachel" href="sim-racing.html">
+        <span class="kachel__nr">03</span>
+        <h2 data-i18n="sim.titel">Sim-Racing</h2>
+        <p data-i18n="teaser.sim"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+      <a class="kachel" href="videos.html">
+        <span class="kachel__nr">04</span>
+        <h2 data-i18n="content.titel">Videos</h2>
+        <p data-i18n="teaser.content"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+      <a class="kachel" href="mein-weg.html">
+        <span class="kachel__nr">05</span>
+        <h2 data-i18n="weg.titel">Mein Weg</h2>
+        <p data-i18n="teaser.weg"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+      <a class="kachel" href="kontakt.html">
+        <span class="kachel__nr">06</span>
+        <h2 data-i18n="kontakt.titel">Kontakt</h2>
+        <p data-i18n="teaser.kontakt"></p>
+        <span class="kachel__pfeil" data-i18n="start.weiter">Ansehen</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="fuss-halter"></div>
+<script src="data/inhalte.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

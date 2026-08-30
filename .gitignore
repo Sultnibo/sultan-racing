@@ -1,0 +1,18 @@
+# Discord-Verknüpfungen: enthalten einen Link mit Zugriffs-Token und
+# gehören nicht ins Netz. Die Datei bleibt bei dir auf der Platte.
+*.url
+
+# Systemdateien, die Windows und macOS von selbst anlegen
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor-Kram
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python-Reste vom lokalen Vorschau-Server
+__pycache__/
+*.pyc
