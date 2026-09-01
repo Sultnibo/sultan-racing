@@ -1,6 +1,12 @@
 # Diese Dateien liegen im Projekt, sollen aber nicht als Webseite
 # ausgeliefert werden. Sie bleiben bei dir und im Repository.
 
+# WICHTIG: Ohne diese beiden Zeilen laedt wrangler das komplette
+# .git-Verzeichnis mit ins Netz. Damit koennte jeder die gesamte
+# Projekthistorie herunterladen. Niemals entfernen.
+.git
+.wrangler
+
 # Konfiguration
 wrangler.jsonc
 .assetsignore
