@@ -1,3 +1,21 @@
+# Diese Dateien liegen im Projekt, sollen aber nicht als Webseite
+# ausgeliefert werden. Sie bleiben bei dir und im Repository.
+
+# Konfiguration
 wrangler.jsonc
 .assetsignore
 README.md
+.gitignore
+
+# Nur fuer die lokale Arbeit
+server.py
+anleitung.html
+assets/img/HIER-FOTOS-ABLEGEN.md
+
+# Verknuepfungsdateien enthalten Links mit Zugriffs-Token.
+# Greift, falls wrangler mal lokal statt ueber GitHub deployt.
+*.url
+
+# Originaldatei des Sultan-Bildes (1,3 MB).
+# Die Website benutzt die kleineren Fassungen in assets/img/sultan-kart.*
+sultankart.png
