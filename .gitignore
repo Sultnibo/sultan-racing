@@ -16,3 +16,7 @@ desktop.ini
 # Python-Reste vom lokalen Vorschau-Server
 __pycache__/
 *.pyc
+
+# Lokaler Zwischenspeicher von wrangler (enthaelt die Konto-ID).
+# Gehoert nicht ins Repository.
+.wrangler/
